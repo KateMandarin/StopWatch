@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> StopWatch</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script   type="text/jsx" src="time.js"></script>
+    <style type = "text/css">
+        .window{
+            background-color: aliceblue;
+            border: 2px solid black;
+            width: 400px;
+            padding-bottom: 100px;
+            margin: 30px;
+        }
+        .text{
+            color: black;
+            padding-left: 100px;
+        }
+        .list{
+            padding-left: 20px;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+<script   type="text/jsx" src="time.js"></script>
+<div class="text"><h1>StopWatch</h1></div>
+<div class="window"></div>
+<div class="list">
+    <button class="start-button" onClick={onStartBtn}>
+        <span>Start</span>
+    </button>
+    <button class="stop-button" onClick={onStopBtn}>
+        <span>Stop</span>
+    </button>
+    <button class="wait_button" onClick={onWaitBtn}>
+        <span>Pause</span>
+    </button>
+    <button class="reset_button"  onClick={onResetBtn}>
+        <span>Reset</span>
+    </button>
+</div>
+</div>
+
+</body>
+</html>
